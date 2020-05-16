@@ -1,3 +1,8 @@
+These are the commands I used to flash to atmega using arduino ISP:
+avrdude -c avrisp -p atmega32 -P /dev/tty.usbserial-A400Y7I9 -b 19200 -U flash:w:main.hex:i
+avrdude -c avrisp -p atmega32 -P /dev/tty.usbserial-A400Y7I9 -b 19200 -U lfuse:w:0x1f:m -U hfuse:w:0xc0:m
+
+__________________________________________________
 This is the README file for USBaspLoader.
 
 USBaspLoader is a USB boot loader for AVR microcontrollers. It can be used on
